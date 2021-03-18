@@ -28,7 +28,7 @@ class CocktailSearch extends React.Component {
 
   searchCocktail = () => {
     AppLoader.showLoader();
-    this.state.searchVal.length > 0 && window.history.replaceState(null, "Cocktail Bar", `/search?name=${this.state.searchVal}`);
+    this.state.searchVal.length > 0 && window.history.replaceState(null, "Cocktail Bar", `/Zigram-Cocktail-Assignment/search?name=${this.state.searchVal}`);
     this.setState({ isSearchInProgress: true, searchResults: [] });
     ApiHelpers.searchCocktails(
       this.state.searchVal,
@@ -99,7 +99,7 @@ class CocktailSearch extends React.Component {
               {
                 searchResults.map((result, index) => {
                   return (
-                    <Link className='col-md-6 col-lg-3 pb-3' to={`/cocktail/${result.idDrink}`} key={index}>
+                    <Link className='col-md-6 col-lg-3 pb-3' to={`/Zigram-Cocktail-Assignment/cocktail/${result.idDrink}`} key={index}>
                       <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                         <div className="portfolio-item filter-card">
                           <div className="portfolio-img">

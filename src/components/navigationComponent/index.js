@@ -7,7 +7,7 @@ export function NavigationComponent({props}) {
         <a role="button" href="#" onClick={props.history.goBack} className='text-left'><p><i className="fas fa-chevron-left"></i> back</p></a>
       </div>
       <div className='col-6'>
-        <Link to={'/'} className='text-right'><p>home <i className="fas fa-home"></i></p></Link>
+        <Link to={'/Zigram-Cocktail-Assignment/'} className='text-right'><p>home <i className="fas fa-home"></i></p></Link>
       </div>
     </div>
     );

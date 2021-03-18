@@ -145,7 +145,7 @@ class Ingredients extends React.Component {
 
             {
               this.state.ingredientsList.map((ingredient, index) => {
-                return <Link className='col-md-6 col-lg-3 pb-3' to={`/ingredient?name=${ingredient.strIngredient1}`} key={index}>
+                return <Link className='col-md-6 col-lg-3 pb-3' to={`/Zigram-Cocktail-Assignment/ingredient?name=${ingredient.strIngredient1}`} key={index}>
                   <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                     <div className="portfolio-item filter-card">
                       <div className="portfolio-img">

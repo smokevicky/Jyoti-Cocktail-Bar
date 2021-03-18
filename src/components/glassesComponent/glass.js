@@ -44,7 +44,7 @@ class Glass extends React.Component {
 
             {
               this.state.cocktailListByGlass.map((cocktail, index) => {
-                return <Link className='col-md-6 col-lg-3 pb-3' to={`/cocktail/${cocktail.idDrink}`} key={index}>
+                return <Link className='col-md-6 col-lg-3 pb-3' to={`/Zigram-Cocktail-Assignment/cocktail/${cocktail.idDrink}`} key={index}>
                   <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                     <div className="portfolio-item filter-card">
                       <div className="portfolio-img">

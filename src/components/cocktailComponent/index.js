@@ -80,10 +80,10 @@ class Cocktail extends React.Component {
                     <p>{cocktailDetails.strInstructions}</p>
                   </div>
                   <div className='col-12'>
-                    Type: <Link to={`/category?name=${cocktailDetails.strCategory}`}>{cocktailDetails.strCategory}</Link>
+                    Type: <Link to={`/Zigram-Cocktail-Assignment/category?name=${cocktailDetails.strCategory}`}>{cocktailDetails.strCategory}</Link>
                   </div>
                   <div className='col-12'>
-                    Served In: <Link to={`/glass?name=${cocktailDetails.strGlass}`}>{cocktailDetails.strGlass}</Link>
+                    Served In: <Link to={`/Zigram-Cocktail-Assignment/glass?name=${cocktailDetails.strGlass}`}>{cocktailDetails.strGlass}</Link>
                   </div>
                   {
                     ingredientsList.length > 0 &&
@@ -92,7 +92,7 @@ class Cocktail extends React.Component {
                       <ul>
                         {
                           ingredientsList.map((ingredient, index) => {
-                            return <li key={index}><Link to={`/ingredient?name=${ingredient.ingredient}`}>{ingredient.ingredient}</Link> {ingredient.measurement?.length > 0 && <> ( {ingredient.measurement.trim()} )</>}</li>
+                            return <li key={index}><Link to={`/Zigram-Cocktail-Assignment/ingredient?name=${ingredient.ingredient}`}>{ingredient.ingredient}</Link> {ingredient.measurement?.length > 0 && <> ( {ingredient.measurement.trim()} )</>}</li>
                           })
                         }
                       </ul>

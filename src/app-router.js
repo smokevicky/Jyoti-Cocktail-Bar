@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Categories from './components/categoriesComponent';
 import Category from './components/categoriesComponent/category';
@@ -19,17 +19,19 @@ const AppRouter = () => {
   return (
     <div>
       <Router history={hist}>
-        <Route path='/categories' exact component={Categories} />
-        <Route path='/category' exact component={Category} />
-        <Route path='/glasses' exact component={Glasses} />
-        <Route path='/glass' exact component={Glass} />
-        <Route path='/ingredients' exact component={Ingredients} />
-        <Route path='/ingredient' exact component={Ingredient} />
-        <Route path='/alcoholic-filters' exact component={AlchoholicFilters} />
-        <Route path='/alcoholic-filter' exact component={AlchoholicFilter} />
-        <Route path='/cocktail/:id' exact component={Cocktail} />
-        <Route path='/search' exact component={CocktailSearch} />
-        <Route path='/' exact component={Home} />
+        <Switch>
+          <Route path='/Zigram-Cocktail-Assignment/categories' exact component={Categories} />
+          <Route path='/Zigram-Cocktail-Assignment/category' exact component={Category} />
+          <Route path='/Zigram-Cocktail-Assignment/glasses' exact component={Glasses} />
+          <Route path='/Zigram-Cocktail-Assignment/glass' exact component={Glass} />
+          <Route path='/Zigram-Cocktail-Assignment/ingredients' exact component={Ingredients} />
+          <Route path='/Zigram-Cocktail-Assignment/ingredient' exact component={Ingredient} />
+          <Route path='/Zigram-Cocktail-Assignment/alcoholic-filters' exact component={AlchoholicFilters} />
+          <Route path='/Zigram-Cocktail-Assignment/alcoholic-filter' exact component={AlchoholicFilter} />
+          <Route path='/Zigram-Cocktail-Assignment/cocktail/:id' exact component={Cocktail} />
+          <Route path='/Zigram-Cocktail-Assignment/search' exact component={CocktailSearch} />
+          <Route path='/Zigram-Cocktail-Assignment/' exact component={Home} />
+        </Switch>
       </Router>
     </div>
   );
