@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Zigram-Cocktail-Assignment/static/css/main.c7641bae.chunk.css",
-    "main.js": "/Zigram-Cocktail-Assignment/static/js/main.ae54a9f5.chunk.js",
-    "main.js.map": "/Zigram-Cocktail-Assignment/static/js/main.ae54a9f5.chunk.js.map",
+    "main.css": "/Zigram-Cocktail-Assignment/static/css/main.8a74dd6f.chunk.css",
+    "main.js": "/Zigram-Cocktail-Assignment/static/js/main.00de2ebc.chunk.js",
+    "main.js.map": "/Zigram-Cocktail-Assignment/static/js/main.00de2ebc.chunk.js.map",
     "runtime-main.js": "/Zigram-Cocktail-Assignment/static/js/runtime-main.93b05061.js",
     "runtime-main.js.map": "/Zigram-Cocktail-Assignment/static/js/runtime-main.93b05061.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/Zigram-Cocktail-Assignment/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.ece9fcdc.chunk.js": "/Zigram-Cocktail-Assignment/static/js/2.ece9fcdc.chunk.js",
-    "static/js/2.ece9fcdc.chunk.js.map": "/Zigram-Cocktail-Assignment/static/js/2.ece9fcdc.chunk.js.map",
+    "static/js/2.4a86f19b.chunk.js": "/Zigram-Cocktail-Assignment/static/js/2.4a86f19b.chunk.js",
+    "static/js/2.4a86f19b.chunk.js.map": "/Zigram-Cocktail-Assignment/static/js/2.4a86f19b.chunk.js.map",
     "static/js/3.e4cb7be4.chunk.js": "/Zigram-Cocktail-Assignment/static/js/3.e4cb7be4.chunk.js",
     "static/js/3.e4cb7be4.chunk.js.map": "/Zigram-Cocktail-Assignment/static/js/3.e4cb7be4.chunk.js.map",
     "index.html": "/Zigram-Cocktail-Assignment/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/Zigram-Cocktail-Assignment/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.c7641bae.chunk.css.map": "/Zigram-Cocktail-Assignment/static/css/main.c7641bae.chunk.css.map",
-    "static/js/2.ece9fcdc.chunk.js.LICENSE.txt": "/Zigram-Cocktail-Assignment/static/js/2.ece9fcdc.chunk.js.LICENSE.txt"
+    "static/css/main.8a74dd6f.chunk.css.map": "/Zigram-Cocktail-Assignment/static/css/main.8a74dd6f.chunk.css.map",
+    "static/js/2.4a86f19b.chunk.js.LICENSE.txt": "/Zigram-Cocktail-Assignment/static/js/2.4a86f19b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.93b05061.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.ece9fcdc.chunk.js",
-    "static/css/main.c7641bae.chunk.css",
-    "static/js/main.ae54a9f5.chunk.js"
+    "static/js/2.4a86f19b.chunk.js",
+    "static/css/main.8a74dd6f.chunk.css",
+    "static/js/main.00de2ebc.chunk.js"
   ]
 }
