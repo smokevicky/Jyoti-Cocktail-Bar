@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Categories from './components/categoriesComponent';
 import Category from './components/categoriesComponent/category';
