@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ApiHelpers } from '../../api-helpers/api-helpers';
 import AppLoader from '../../utility/app-loader';
-import CocktailSearch from '../searchComponent';
 
 class Home extends React.Component {
 

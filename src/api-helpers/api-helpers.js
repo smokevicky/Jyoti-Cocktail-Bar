@@ -5,7 +5,6 @@ export const ApiHelpers = {
   getCategoriesList: (successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getFilterList('c'), successCallback, errorCallback)},
   getGlassesList: (successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getFilterList('g'), successCallback, errorCallback)},
   getIngredientsList: (successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getFilterList('i'), successCallback, errorCallback)},
-  getIngredientsList: (successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getFilterList('i'), successCallback, errorCallback)},
   getAlchoholicFiltersList: (successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getFilterList('a'), successCallback, errorCallback)},
   getAlcholicFiltersList: (successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getFilterList('a'), successCallback, errorCallback)},
   getARamdomCocktail:  (successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getARamdomCocktail(), successCallback, errorCallback)},

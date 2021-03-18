@@ -50,7 +50,7 @@ class CocktailSearch extends React.Component {
   }
 
   handleEnterKeyPress = (e) => {
-    e.key == 'Enter' && this.searchCocktail();
+    e.key === 'Enter' && this.searchCocktail();
   }
 
   updateSearchValue = (e) => {
@@ -118,8 +118,8 @@ class CocktailSearch extends React.Component {
             </div>
           }
           {
-            isSearchInProgress != null &&
-            (searchResults == null || searchResults.length == 0) &&
+            isSearchInProgress !== null &&
+            (searchResults === null || searchResults.length === 0) &&
             <div>
               {
                 isSearchInProgress
