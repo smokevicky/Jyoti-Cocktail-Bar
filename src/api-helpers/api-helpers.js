@@ -14,4 +14,5 @@ export const ApiHelpers = {
   getGlassDetails:  (filterName, successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getListByFilter('g', filterName), successCallback, errorCallback)},
   getIngredientDetails:  (filterName, successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getListByFilter('i', filterName), successCallback, errorCallback)},
   getAlchoholicFilterDetails:  (filterName, successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getListByFilter('a', filterName), successCallback, errorCallback)},
+  searchCocktails:  (cocktailName, successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.searchCocktails(cocktailName), successCallback, errorCallback)}
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ApiHelpers } from '../../api-helpers/api-helpers';
 import AppLoader from '../../utility/app-loader';
+import CocktailSearch from '../searchComponent';
 
 class Home extends React.Component {
 
@@ -132,18 +133,11 @@ class Home extends React.Component {
 
           </div>
 
-          <div className="section-title">
-            <p>or</p>
-            <p>Search for your cocktail yourself</p>
+          <div className="section-title pt-3">
+            <p>Looking for anything specific?</p>
+            {/* <p>Search for your cocktail yourself</p> */}
+            <Link to={'/search'} className='btn btn-light mt-2'>Search all cocktails</Link>
           </div>
-
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Type here to search" aria-label="Cocktail Search" aria-describedby="cocktailSearch" />
-            <div class="input-group-append">
-              <button class="btn btn-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </div>
-          </div>
-
 
         </div>
       </section>

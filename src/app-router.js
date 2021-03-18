@@ -11,6 +11,7 @@ import Ingredients from './components/ingredientsComponent';
 import Ingredient from './components/ingredientsComponent/ingredient';
 import AlchoholicFilters from './components/alchoholicFilterComponent';
 import AlchoholicFilter from './components/alchoholicFilterComponent/alchoholicFilter';
+import CocktailSearch from './components/searchComponent';
 
 const hist = createBrowserHistory();
 
@@ -27,6 +28,7 @@ const AppRouter = () => {
         <Route path='/alcoholic-filters' exact component={AlchoholicFilters} />
         <Route path='/alcoholic-filter' exact component={AlchoholicFilter} />
         <Route path='/cocktail/:id' exact component={Cocktail} />
+        <Route path='/search' exact component={CocktailSearch} />
         <Route path='/' exact component={Home} />
       </Router>
     </div>

@@ -5,4 +5,5 @@ export const API_ENDPOINTS = {
   getARamdomCocktail: () => { return `${baseUrl}/random.php` },
   getCocktailDetails: (id) => { return `${baseUrl}/lookup.php?i=${id}` },
   getListByFilter: (filter, name) => { return `${baseUrl}/filter.php?${filter}=${name}` },
+  searchCocktails: (cocktailName) => { return `${baseUrl}/search.php?s=${cocktailName}` }
 }
