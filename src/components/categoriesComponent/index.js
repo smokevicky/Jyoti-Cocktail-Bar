@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ApiHelpers } from '../../api-helpers/api-helpers';
 import AppLoader from '../../utility/app-loader';
+import { NavigationComponent } from '../navigationComponent';
 
 class Categories extends React.Component {
 
@@ -47,8 +48,8 @@ class Categories extends React.Component {
         <div className="container aos-init aos-animate" data-aos="fade-up">
 
           <div className="section-title">
-            <a href='#' onClick={this.props.history.goBack} className='text-left'><p><i className="fas fa-chevron-left"></i> back</p></a>
-            <p>Select a Cocktail category</p>
+            <NavigationComponent props={this.props} />
+            <p>We offer the best Beers in town!</p>
           </div>
 
           <div className='row team portfolio'>

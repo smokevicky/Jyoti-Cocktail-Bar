@@ -64,6 +64,7 @@ class Home extends React.Component {
           }
 
           <div className="section-title">
+            <p>or</p>
             <p>Browse Cocktails by</p>
           </div>
 
@@ -131,6 +132,17 @@ class Home extends React.Component {
 
           </div>
 
+          <div className="section-title">
+            <p>or</p>
+            <p>Search for your cocktail yourself</p>
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Type here to search" aria-label="Cocktail Search" aria-describedby="cocktailSearch" />
+            <div class="input-group-append">
+              <button class="btn btn-secondary" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+          </div>
 
 
         </div>

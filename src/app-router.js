@@ -5,6 +5,12 @@ import Categories from './components/categoriesComponent';
 import Category from './components/categoriesComponent/category';
 import Cocktail from './components/cocktailComponent';
 import Home from './components/homeComponent';
+import Glasses from './components/glassesComponent';
+import Glass from './components/glassesComponent/glass';
+import Ingredients from './components/ingredientsComponent';
+import Ingredient from './components/ingredientsComponent/ingredient';
+import AlchoholicFilters from './components/alchoholicFilterComponent';
+import AlchoholicFilter from './components/alchoholicFilterComponent/alchoholicFilter';
 
 const hist = createBrowserHistory();
 
@@ -14,9 +20,12 @@ const AppRouter = () => {
       <Router history={hist}>
         <Route path='/categories' exact component={Categories} />
         <Route path='/category' exact component={Category} />
-        <Route path='/glasses' exact component={Home} />
-        <Route path='/ingredients' exact component={Home} />
-        <Route path='/alcoholic-filters' exact component={Home} />
+        <Route path='/glasses' exact component={Glasses} />
+        <Route path='/glass' exact component={Glass} />
+        <Route path='/ingredients' exact component={Ingredients} />
+        <Route path='/ingredient' exact component={Ingredient} />
+        <Route path='/alcoholic-filters' exact component={AlchoholicFilters} />
+        <Route path='/alcoholic-filter' exact component={AlchoholicFilter} />
         <Route path='/cocktail/:id' exact component={Cocktail} />
         <Route path='/' exact component={Home} />
       </Router>

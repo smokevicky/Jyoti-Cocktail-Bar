@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ApiHelpers } from '../../api-helpers/api-helpers';
 import AppLoader from '../../utility/app-loader';
+import { NavigationComponent } from '../navigationComponent';
 
 class Cocktail extends React.Component {
 
@@ -48,7 +49,7 @@ class Cocktail extends React.Component {
         <div className="container aos-init aos-animate" data-aos="fade-up">
 
           <div className="section-title">
-            <a href='#' onClick={this.props.history.goBack} className='text-left'><p><i className="fas fa-chevron-left"></i> back</p></a>
+            <NavigationComponent props={this.props} />
             <p>Your Cocktail details</p>
           </div>
 
@@ -66,7 +67,7 @@ class Cocktail extends React.Component {
               {/* <div className='row justify-content-center mt-10'>
                 <button type='button' className='btn btn-primary'><i className="fa fa-bookmark" aria-hidden="true"></i> Bookmark</button>
               </div> */}
-              
+
             </div>
             <div className='col-md-7 col-lg-6'>
               <div className='row'>
@@ -77,10 +78,10 @@ class Cocktail extends React.Component {
                   <p>{cocktailDetails.strInstructions}</p>
                 </div>
                 <div className='col-12'>
-                  Category: <Link to={`/category?name=${cocktailDetails.strCategory}`}>{cocktailDetails.strCategory}</Link>
+                  Type: <Link to={`/category?name=${cocktailDetails.strCategory}`}>{cocktailDetails.strCategory}</Link>
                 </div>
                 <div className='col-12'>
-                  Glass type: <Link to={`/glass/${cocktailDetails.strGlass}`}>{cocktailDetails.strGlass}</Link>
+                  Served In: <Link to={`/glass?name=${cocktailDetails.strGlass}`}>{cocktailDetails.strGlass}</Link>
                 </div>
                 {
                   ingredientsList.length > 0 &&
@@ -89,7 +90,7 @@ class Cocktail extends React.Component {
                       <ul>
                       {
                         ingredientsList.map((ingredient, index) => {
-                          return <li key={index}><Link to={`/ingredient/${ingredient.ingredient}`}>{ingredient.ingredient}</Link> {ingredient.measurement?.length > 0 && <> ( {ingredient.measurement.trim()} )</>}</li>
+                          return <li key={index}><Link to={`/ingredient?name=${ingredient.ingredient}`}>{ingredient.ingredient}</Link> {ingredient.measurement?.length > 0 && <> ( {ingredient.measurement.trim()} )</>}</li>
                         })
                       }
                     </ul>

@@ -4,25 +4,25 @@ import { ApiHelpers } from '../../api-helpers/api-helpers';
 import AppLoader from '../../utility/app-loader';
 import { NavigationComponent } from '../navigationComponent';
 
-class Category extends React.Component {
+class Glass extends React.Component {
 
   state = {
-    cocktailListByCategory: []
+    cocktailListByGlass: []
   };
 
   componentDidMount = () => {
     AppLoader.showLoader();
-    let categoryName = new URLSearchParams(window.location.search).get('name');
-    ApiHelpers.getCategoryDetails(categoryName,
+    let filterName = new URLSearchParams(window.location.search).get('name');
+    ApiHelpers.getGlassDetails(filterName,
       response => {
         this.setState({
-          cocktailListByCategory: response
+          cocktailListByGlass: response
         });
         AppLoader.hideLoader();
       },
       error => {
         this.setState({
-          cocktailListByCategory: []
+          cocktailListByGlass: []
         });
         AppLoader.hideLoader();
       }
@@ -30,24 +30,20 @@ class Category extends React.Component {
   }
 
   render() {
-    const categoryName = new URLSearchParams(window.location.search).get('name');
+    const filterName = new URLSearchParams(window.location.search).get('name');
     return (
       <section className='section-bg'>
         <div className="container aos-init aos-animate" data-aos="fade-up">
 
           <div className="section-title">
             <NavigationComponent props={this.props} />
-            {
-              categoryName.toLowerCase() === 'beer'
-                ? <p>Excellent choice! Even we love {categoryName}s.</p>
-                : <p>All available in {categoryName}s</p>
-            }
+            <p>We prefer these in a {filterName}</p>
           </div>
 
           <div className='row team portfolio'>
 
             {
-              this.state.cocktailListByCategory.map((cocktail, index) => {
+              this.state.cocktailListByGlass.map((cocktail, index) => {
                 return <Link className='col-md-6 col-lg-3 pb-3' to={`/cocktail/${cocktail.idDrink}`} key={index}>
                   <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                     <div className="portfolio-item filter-card">
@@ -70,4 +66,4 @@ class Category extends React.Component {
   }
 }
 
-export default Category;
+export default Glass;
