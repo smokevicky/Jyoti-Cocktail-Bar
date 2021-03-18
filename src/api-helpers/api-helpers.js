@@ -8,4 +8,5 @@ export const ApiHelpers = {
   getAlcholicFiltersList: (successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getFilterList('a'), successCallback, errorCallback)},
   getARamdomCocktail:  (successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getARamdomCocktail(), successCallback, errorCallback)},
   getCocktailDetails:  (id, successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getCocktailDetails(id), successCallback, errorCallback)},
+  getCategoryDetails:  (categoryName, successCallback, errorCallback) => { BaseApiHelperGet(API_ENDPOINTS.getListByFilter('c', categoryName), successCallback, errorCallback)},
 }
