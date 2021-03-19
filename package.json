@@ -2,7 +2,6 @@
   "name": "zigram-assignment",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://smokevicky.github.io/Zigram-Cocktail-Assignment/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@testing-library/jest-dom": "^5.11.9",

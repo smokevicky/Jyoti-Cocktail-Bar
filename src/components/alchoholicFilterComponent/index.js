@@ -47,7 +47,7 @@ class AlchoholicFilters extends React.Component {
           <div className='row team portfolio'>
             {
               this.state.alchoholicFiltersList.map((preference, index) => {
-                return <Link className='col-md-6 col-lg-3 pb-3' to={`/Zigram-Cocktail-Assignment/alcoholic-filter?name=${preference.strAlcoholic}`} key={index}>
+                return <Link className='col-md-6 col-lg-3 pb-3' to={`/alcoholic-filter?name=${preference.strAlcoholic}`} key={index}>
                   <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                     <div className="portfolio-item filter-card">
                       <div className="portfolio-img">

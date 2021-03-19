@@ -46,7 +46,7 @@ class Home extends React.Component {
 
               <div className='row team portfolio justify-content-center'>
                 {/* Random cocktail */}
-                <Link className='col-md-6 col-lg-4 pb-3' to={`/Zigram-Cocktail-Assignment/cocktail/${randomCocktail.idDrink}`}>
+                <Link className='col-md-6 col-lg-4 pb-3' to={`/cocktail/${randomCocktail.idDrink}`}>
                   <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                     <div className="portfolio-item filter-card">
                       <div className="portfolio-img">
@@ -71,7 +71,7 @@ class Home extends React.Component {
           <div className='row team portfolio'>
 
             {/* Filter by categories */}
-            <Link className='col-md-6 col-lg-3 pb-3' to={'/Zigram-Cocktail-Assignment/categories'}>
+            <Link className='col-md-6 col-lg-3 pb-3' to={'/categories'}>
               <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                 <div className="portfolio-item filter-card">
                   <div className="portfolio-img">
@@ -86,7 +86,7 @@ class Home extends React.Component {
             </Link>
 
             {/* Filter by glasses */}
-            <Link className='col-md-6 col-lg-3 pb-3' to={'/Zigram-Cocktail-Assignment/glasses'}>
+            <Link className='col-md-6 col-lg-3 pb-3' to={'/glasses'}>
               <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                 <div className="portfolio-item filter-card">
                   <div className="portfolio-img">
@@ -101,7 +101,7 @@ class Home extends React.Component {
             </Link>
 
             {/* Filter by ingredients  */}
-            <Link className='col-md-6 col-lg-3 pb-3' to={'/Zigram-Cocktail-Assignment/ingredients'}>
+            <Link className='col-md-6 col-lg-3 pb-3' to={'/ingredients'}>
               <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                 <div className="portfolio-item filter-card">
                   <div className="portfolio-img">
@@ -116,7 +116,7 @@ class Home extends React.Component {
             </Link>
 
             {/* Filter by alcoholic filters */}
-            <Link className='col-md-6 col-lg-3 pb-3' to={'/Zigram-Cocktail-Assignment/alcoholic-filters'}>
+            <Link className='col-md-6 col-lg-3 pb-3' to={'/alcoholic-filters'}>
               <div className="member d-flex align-items-start aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                 <div className="portfolio-item filter-card">
                   <div className="portfolio-img">
@@ -135,7 +135,7 @@ class Home extends React.Component {
           <div className="section-title pt-3">
             <p>Looking for anything specific?</p>
             {/* <p>Search for your cocktail yourself</p> */}
-            <Link to={'/Zigram-Cocktail-Assignment/search'} className='btn btn-light mt-2'>Search all cocktails</Link>
+            <Link to={'/search'} className='btn btn-light mt-2'>Search all cocktails</Link>
           </div>
 
         </div>
