@@ -28,7 +28,7 @@ class CocktailSearch extends React.Component {
 
   searchCocktail = () => {
     AppLoader.showLoader();
-    this.state.searchVal.length > 0 && window.history.replaceState(null, "Cocktail Bar", `/search?name=${this.state.searchVal}`);
+    this.state.searchVal.length > 0 && window.history.replaceState(null, "Jyoti's Cocktail Bar", `/search?name=${this.state.searchVal}`);
     this.setState({ isSearchInProgress: true, searchResults: [] });
     ApiHelpers.searchCocktails(
       this.state.searchVal,

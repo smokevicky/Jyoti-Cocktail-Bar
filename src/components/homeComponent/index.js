@@ -34,7 +34,7 @@ class Home extends React.Component {
         <div className="container aos-init aos-animate" data-aos="fade-up">
 
           <div className="section-title">
-            Welcome to<h2 className='mb-0'>Cocktail bar</h2>
+            Welcome to<h2 className='mb-0'>Jyoti Cocktail bar</h2>
           </div>
 
           {
