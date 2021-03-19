@@ -2,13 +2,11 @@
 
 Take a look at our [Cocktail Menu](https://smokevicky.github.io/Zigram-Cocktail-Assignment/).
 
-## Available Scripts
-
-Steps to run the app on local:
+## Steps to run the app on local
 
 ### `npm install`
 
-Downloads all external dependencies for you.\
+Downloads all external dependencies for you.
 
 ### `npm start`
 
