@@ -1,6 +1,6 @@
 # Welcome to Jyoti's Cocktail Bar
 
-Take a look at our [Cocktail Menu](https://smokevicky.github.io/Zigram-Cocktail-Assignment/).
+Take a look at our [Cocktail Menu](https://smokevicky.github.io/Jyoti-Cocktail-Bar/).
 
 ## Steps to run the app on local
 
